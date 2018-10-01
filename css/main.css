@@ -1,0 +1,28 @@
+/* CUSTOM STYLES */
+html, body {
+    margin: 0;
+	padding: 0;
+
+}
+
+.wrapper {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 2em;
+    align-self: center;
+    grid-template-areas: 'x y y y y'
+                          'x main main main w'
+                          'x main main main w'
+                          'x z z z z';
+}
+
+.logo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.wrapper>div {
+    background-color: blue;
+    border: 1px solid black;
+}
